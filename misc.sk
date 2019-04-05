@@ -41,14 +41,6 @@ village and pillage update:
 	{bamboo age} {bamboo leaves} {bamboo stage} bamboo [plant] = minecraft:bamboo
 	bamboo = minecraft:bamboo
 
-	{berry age}:
-		{default} = -
-		young = -[age=0]
-		berryless = -[age=1]
-		(some berries|berried) = -[age=2]
-		(many berries|very berried) = -[age=3]
-	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
-
 	flower charge banner pattern¦s = minecraft:flower_banner_pattern
 	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
 	skull charge banner pattern¦s = minecraft:skull_banner_pattern

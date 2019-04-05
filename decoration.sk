@@ -82,14 +82,6 @@ village and pillage decoratives:
 	{waterloggable} {lightable} campfire¦s = minecraft:campfire
 	{waterloggable} {lightable} signaling campfire = minecraft:campfire[signal_fire=true]
 
-# Decoratives added in 1.12 that were changed in the flattening.
-world of color decoratives before flattening:
-	minecraft version = 1.12 to 1.12.2
-	
-	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
-	# "old" variation because light_gray blocks used to be called silver in their IDs.
-	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
-
 # Decoratives who used to have a different ID before the flattening.
 decoratives before flattening:
 	minecraft version = 1.12.2 or older
@@ -219,8 +211,53 @@ decoratives before flattening:
 	ender chest¦s = minecraft:ender_chest
 	anvil¦s = minecraft:anvil
 	slime block¦s = minecraft:slime
+
+old beds:
+	minecraft version = 1.11.2 or older
 	bed [block]¦s = minecraft:bed
 	any bed¦s = minecraft:bed
+
+# Decoratives added in 1.12 that were changed in the flattening.
+world of color decoratives before flattening:
+	minecraft version = 1.12 to 1.12.2
+
+	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
+	# "old" variation because light_gray blocks used to be called silver in their IDs.
+	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
+
+	{bed state}:
+		[(top|upper)-half] south(ward| facing) [unoccupied] = {Damage:8}
+		[(top|upper)-half] west(ward| facing) [unoccupied] = {Damage:9}
+		[(top|upper)-half] north(ward| facing) [unoccupied] = {Damage:10}
+		[(top|upper)-half] east(ward| facing) [unoccupied] = {Damage:11}
+		[(top|upper)-half] south(ward| facing) occupied = {Damage:12}
+		[(top|upper)-half] west(ward| facing) occupied = {Damage:13}
+		[(top|upper)-half] north(ward| facing) occupied = {Damage:14}
+		[(top|upper)-half] east(ward| facing) occupied = {Damage:15}
+		(bottom|lower)-half south(ward| facing) = {Damage:0}
+		(bottom|lower)-half west(ward| facing) = {Damage:1}
+		(bottom|lower)-half north(ward| facing) = {Damage:2}
+		(bottom|lower)-half east(ward| facing) = {Damage:3}
+	{bed color}:
+		white = - {color:0}
+		orange = - {color:1}
+		magenta = - {color:2}
+		light blue = - {color:3}
+		yellow = - {color:4}
+		(lime|light green) = - {color:5}
+		pink = - {color:6}
+		[dark] gray = - {color:7}
+		light gray = - {color:8}
+		cyan = - {color:9}
+		purple = - {color:10}
+		blue = - {color:11}
+		brown = - {color:12}
+		[dark] green = - {color:13}
+		red = - {color:14}
+		black = - {color:15}
+	{bed state} {bed color} bed [block] = minecraft:bed
+	[{colored}] bed [item]¦s = minecraft:bed
+	any bed = white bed, orange bed, magenta bed, light blue bed, yellow bed, lime bed, pink bed, dark gray bed, light gray bed, cyan bed, purple bed, blue bed, brown bed, dark green bed, red bed, black bed
 
 # Decoratives whose IDs were changed as part of the flattening.
 decoratives after flattening:

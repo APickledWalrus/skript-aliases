@@ -78,6 +78,14 @@ village and pillage update:
 	suspicious stew¦s = minecraft:suspicious_stew #food item, but not listed in creative menu; may change
 	{orientable} jigsaw block¦s = minecraft:jigsaw
 
+	{berry age}:
+		{default} = -
+		young = -[age=0]
+		berryless = -[age=1]
+		(some berries|berried) = -[age=2]
+		(many berries|very berried) = -[age=3]
+	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
+
 # Unlisted blocks added in 1.9
 unchanged combat update unlisted:
 	minecraft version = 1.9 or newer
